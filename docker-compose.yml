@@ -1,6 +1,6 @@
 services:
   openswoole:
-    image: openswoole/swoole:4.9.0
+    image: openswoole/swoole:latest
     container_name: openswoole
     ports:
       - 9501:9501

@@ -2,11 +2,28 @@
 
 This is the example repo of using Open Swoole Metrics in `v4.9.0` to bootstrap an [Open Swoole Dashboard](https://openswoole.com/dashboard) with [Metrics in Open Swoole](https://openswoole.com/docs/modules/swoole-server-stats), [Grafana](https://grafana.com/) and [Prometheus](https://prometheus.io/).
 
-Docker and Docker Compose are requried:
+Docker and Docker Compose are requried.
+
+### Bootstrap Open Swoole Dashboard
 
 ```bash
 git clone git@github.com:openswoole/dashboard.git
 cd dashboard
+docker pull openswoole/swoole:latest
 docker-compose up
 ```
 
+### Open Swoole Metrics
+
+Find /metrics output at `http://127.0.0.1:9501/metrics`
+
+### Prometheus UI
+
+Find Prometheus server at `http://127.0.0.1:9090/`
+
+### Grafana Dashboard
+
+1. Find `http://127.0.0.1:3000/login`, the default username and password are `openswoole:openswoole`.
+2. Import Open Swoole Dashboard at `http://127.0.0.1:3000/dashboard/import`, enter ID `15418` and hit load button.
+3. Send some traffic with wrk using `wrk -t4 -c16 -d5 --latency http://127.0.0.1:9501/`
+4. Have fun with OpenSwoole Dashboard
