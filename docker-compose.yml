@@ -1,4 +1,11 @@
 services:
+  openswoole:
+    image: openswoole/swoole:4.9.0
+    container_name: openswoole
+    ports:
+      - 9501:9501
+    volumes:
+      - ./openswoole:/var/www
   prometheus:
     image: prom/prometheus
     container_name: prometheus

@@ -27,4 +27,4 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - host.docker.internal:9501
+    - openswoole:9501
