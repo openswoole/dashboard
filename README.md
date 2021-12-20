@@ -26,7 +26,7 @@ Find /metrics output at `http://127.0.0.1:9501/metrics`
 
 Find Prometheus server at `http://127.0.0.1:9090/`
 
-<img width="800" alt="Open Swoole Metrics" src="https://user-images.githubusercontent.com/313478/146695579-78be99a2-5fad-4c25-a70a-97319133e921.png">
+<img width="400" alt="Open Swoole Metrics" src="https://user-images.githubusercontent.com/313478/146695579-78be99a2-5fad-4c25-a70a-97319133e921.png">
 
 ### Grafana Dashboard
 
@@ -35,7 +35,7 @@ Find Prometheus server at `http://127.0.0.1:9090/`
 3. Send some traffic with wrk using `wrk -t4 -c16 -d5 --latency http://127.0.0.1:9501/`
 4. Have fun with OpenSwoole Dashboard
 
-<img width="800" alt="Open Swoole Dashboard" src="https://user-images.githubusercontent.com/313478/146695592-5500860d-59d2-4583-8a3b-1b08e0f98c7f.png">
+<img width="400" alt="Open Swoole Dashboard" src="https://user-images.githubusercontent.com/313478/146695592-5500860d-59d2-4583-8a3b-1b08e0f98c7f.png">
 
 
 
