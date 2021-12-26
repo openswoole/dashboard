@@ -11,10 +11,18 @@ Docker and Docker Compose are requried.
 
 ### Bootstrap Open Swoole Dashboard
 
+Make sure openswoole version >= 4.9.0:
+
+```bash
+docker pull openswoole/swoole:latest
+docker run --rm openswoole/swoole:latest php --ri openswoole
+```
+
+Start the demo server and dashboard:
+
 ```bash
 git clone git@github.com:openswoole/dashboard.git
 cd dashboard
-docker pull openswoole/swoole:latest
 docker-compose up
 ```
 
